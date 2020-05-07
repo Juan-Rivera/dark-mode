@@ -9,7 +9,7 @@ function useLocalStorage(key, initialValue){
         // Parse and return stored json or, if undefined, return initialValue
         return item ? JSON.parse(item) : initialValue;
     });
-
     
+    return [storedValue];
 } 
 export default useLocalStorage

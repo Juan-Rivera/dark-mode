@@ -8,11 +8,11 @@ function useDarkMode(key){
     useEffect(() =>{
         //sets the darkmode class
         if(darkMode === true){
-
+            document.body.classList.add('dark-mode');
         }
         //removes the darkmode class
         else{
-
+            document.body.classList.remove('dark-mode');
         }
     })
 

@@ -14,6 +14,7 @@ function useDarkMode(key){
         else{
             document.body.classList.remove('dark-mode');
         }
-    })
-
+    }, [darkMode]) //dependency array that is synced up to only when the darkMode state is changed
+    
+    return[darkMode]
 }

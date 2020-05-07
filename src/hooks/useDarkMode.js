@@ -16,5 +16,6 @@ function useDarkMode(key){
         }
     }, [darkMode]) //dependency array that is synced up to only when the darkMode state is changed
     
-    return[darkMode]
+    return[darkMode, setDarkMode]
 }
+export default useDarkMode
